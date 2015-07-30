@@ -8,23 +8,16 @@ for($i=0;$i<28;$i++){
 }
 
 if ($_POST['new']=='yes'){
-    for ($i=0;$i<$testo['str']['num'];$i++){
-        $mainDB->setColWh(array('who','name'));
-        $mainDB->setValWh(array($_POST['id'],$testo['str']['id'][$i]));
-        $res=$mainDB->select('grants');
-        
-        if(isset($res['value'])){
-            $mainDB->setColWh(array('who','name'));
-            $mainDB->setValWh(array($_POST['id'],$testo['str']['id'][$i]));
-            $mainDB->setColDt(array('value'));
-            $mainDB->setValDt(array($_POST[$testo['str']['id'][$i]]));
-            $mainDB->update('grants');
-        }else{
-            $mainDB->setColDt(array('who','name','value'));
-            $mainDB->setValDt(array($_POST['id'],$testo['str']['id'][$i],$_POST[$testo['str']['id'][$i]]));
-            $mainDB->insert('grants');
-        }
-    }
-    Redieasy('index.php?token='.$_GET['token']);
+    $dataDB->setColDt(array('muscle','training','mask'));
+    $dataDB->setValDt(array($_POST['muscle'],$_POST['training'],$mask));
+    $dataDB->insert('sheetMask');
+}else{
+    $dataDB->setColWh(array('muscle','training'));
+    $dataDB->setValWh(array($_POST['muscle'],$_POST['training']));
+    $dataDB->setColDt(array('mask'));
+    $dataDB->setValDt(array($mask));
+    $dataDB->update('sheetMask');
 }
+
+Redieasy('index.php?token='.$_GET['token']);
 ?>

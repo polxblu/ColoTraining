@@ -18,9 +18,9 @@ echo '
     
     for($i=0;$i<$liste['typeTraining']['num'];$i++){
         $dataDB->setColWh(array('muscle','training'));
-        $dataDB->setValWh(array($liste['videoMuscleGroup']['idc'][$j],$liste['typeTraining']['name'][$i]));
+        $dataDB->setValWh(array($liste['videoMuscleGroup']['idc'][$j],$liste['typeTraining']['idc'][$i]));
         $res=$dataDB->select('sheetMask');
-        
+
         if(empty($res['id'])){
             $new='yes';
             $chkData='nnnnnnnnnnnnnnnnnnnnnnnnnnnn';
