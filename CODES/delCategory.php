@@ -10,6 +10,14 @@ if (isset($_POST['delSure'])){
     $mainDB->setValWh(array($_POST['id']));
     $mainDB->delete('category');
         
+    $dataDB->setColWh(array('muscle'));
+    $dataDB->setValWh(array($_POST['id']));
+    $dataDB->delete('sheetMask');
+
+    $dataDB->setColWh(array('training'));
+    $dataDB->setValWh(array($_POST['id']));
+    $dataDB->delete('sheetMask');
+
     if ( isset($_POST['main']) && $_POST['type'.$_POST['cont']]!==$liste['type']['idc'][0]){
         for ($i=0;$i<$liste[$_POST['id']]['num'];$i++){
             $mainDB->setColWh(array('id'));
