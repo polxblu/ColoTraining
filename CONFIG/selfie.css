@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+     font-family: Arial, Helvetica, Sans-serif;
+     font-size:18px;
+}
+
+
+#presentation
+{
+	position:absolute;
+	top:100px;
+	width:100%;
+	max-width:920px;
+	left:50%;
+	margin-left:-460px;
+	border:none;
+}
+
+/* controlli risoluzione */
+@media(max-width: 400px)
+{
+
+
+}
+
+@media(max-width: 920px)
+{
+   
+}

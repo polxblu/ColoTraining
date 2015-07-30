@@ -1,0 +1,18 @@
+Usato per traa di noi comunicazioni!
+ DROP `name`,
+  DROP `surname`,
+  DROP `zip`,
+  DROP `city`,
+  DROP `state`,
+  DROP `preflang`,
+  DROP `addres`,
+  DROP `opt0`,
+  DROP `opt1`,
+  DROP `opt2`,
+  DROP `opt3`,
+  DROP `opt4`,
+  DROP `opt5`,
+  DROP `opt6`,
+  DROP `opt7`,
+  DROP `opt8`,
+  DROP `opt9`;

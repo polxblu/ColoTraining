@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+     font-family: Arial, Helvetica, Sans-serif;
+     font-size:18px;
+	 background-color:rgba(69,140,204,0.7);
+}
+
+.campi
+{
+   background-color:rgba(255,255,255,0.5);
+   color:black;
+   border:none;
+   padding:10px;
+   margin:12px;
+}
+
+.input
+{
+   background-color:rgba(255,255,255,0.5);
+   color:black;
+   border:none;
+   padding:10px;
+   border-bottom:2px solid white;
+}
+
+.botoo
+{
+   background-color:rgba(255,255,255,0.5);
+   color:black;
+   border:none;
+   padding:10px;
+   border:3px solid white;
+}
+
+#peso
+{
+   position:fixed;
+   right:0;
+   bottom:0;
+   z-index:1;
+}
+
+#tabella
+{
+   z-index:99;
+}
+
+
+/* controlli risoluzione */
+@media(max-width: 750px)
+{
+   
+}
+
+@media(max-width: 920px)
+{
+   
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+img{outline: none}
+a img {outline: none}
+a:link, a:visited, a:hover {outline: none}
+
+body{
+background: #CEDECE;
+margin:0 auto;
+}
+
+div#lingue{
+position:relative;
+background-color:#fafafa;
+border:1px solid #f33f45;
+width:100px;
+height:40px;
+color: #900;
+z-index: 20;
+}
+div#lingueOver{
+position:absolute;
+left:20px;
+top:-1px;
+border:1px solid #f33f45;
+width:125px;
+background-color:#fafafa;
+color: #900;
+visibility: hidden;
+z-index: 30;
+}
+
