@@ -18,6 +18,10 @@ if (isset($_POST['delSure'])){
     $dataDB->setValWh(array($_POST['id']));
     $dataDB->delete('sheetMask');
 
+    $dataDB->setColWh(array('who'));
+    $dataDB->setValWh(array($_POST['id']));
+    $dataDB->delete('dataTypeTraining');
+
     if ( isset($_POST['main']) && $_POST['type'.$_POST['cont']]!==$liste['type']['idc'][0]){
         for ($i=0;$i<$liste[$_POST['id']]['num'];$i++){
             $mainDB->setColWh(array('id'));

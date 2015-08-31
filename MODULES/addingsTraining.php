@@ -12,6 +12,10 @@
         $dataDB->setColWh(array('who'));
         $dataDB->setValWh(array($liste['typeTraining']['idc'][$i]));
         $res=$dataDB->select('dataTypeTraining');
+        if(empty($res['id'])){
+            $res['nRip']=$res['nSer']=$res['nAff']=$res['tRec']='';
+            $new='yes';
+        }else $new='no';
         echo '
         <form action="index.php?token='.$_GET['token'].'" name="clrTxT" method="post">
 <tr>
@@ -22,6 +26,7 @@
 	<td><input name="tRec" size="3" type="text" value="'.$res['tRec'].'"/></td>
 	<td>
         <input name="id" type="hidden" value="'.$liste['typeTraining']['idc'][$i].'"/>
+        <input name="new" type="hidden" value="'.$new.'"/>
         <button name="ACT" type="submit" value="'.$testo['buttons']['modDatiTra'].'">
             '.$testo['buttons']['modDatiTra'].'
         </button>

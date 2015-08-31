@@ -56,6 +56,11 @@ if( // Array Video
 if (isset($_POST['ACT'])){
    switch ($_POST['ACT']){
 
+//Set Dati Aggiuntivi Training Type
+	  case $testo['buttons']['modDatiTra']:
+          require('../CODES/7DataTraining.php');
+	  break;
+
 //Set maskere scheda allenamento
 	  case $testo['buttons']['setMasks']:
           require('../CODES/7Masks.php');
