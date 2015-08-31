@@ -56,6 +56,11 @@ if( // Array Video
 if (isset($_POST['ACT'])){
    switch ($_POST['ACT']){
 
+//Aggiungi Muscoli Obbligatori Training Type
+	  case $testo['buttons']['addMuscle']:
+          require('../CODES/addObbMuscle.php');
+	  break;
+
 //Set Dati Aggiuntivi Training Type
 	  case $testo['buttons']['modDatiTra']:
           require('../CODES/7DataTraining.php');

@@ -1,4 +1,4 @@
-<table align="center" cellpadding="0" cellspacing="4" border="1px solid black">
+<table align="center" cellpadding="4" cellspacing="0" border="1px solid black">
 <tr>
 	<td>Training</td>
 	<td>Numero Ripetizioni</td>
