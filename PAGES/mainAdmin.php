@@ -14,6 +14,10 @@
           require('../MODULES/adminTxtWebSite.php');
 	  break;
 
+	  case 'obbMuscTrainingOrd':// Gestione Ordine Muscoli obbligatori
+          require('../MODULES/obbMuscTrainingOrd.php');
+	  break;
+
 	  case 'modCategoryOrd':// Gestione Ordine Categorie
           require('../MODULES/categoryOrd.php');
 	  break;

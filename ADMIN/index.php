@@ -42,6 +42,7 @@ if( // Array Liste
   $var['pag']=='category'
 ||$var['pag']=='video'
 ||$var['pag']=='modCategoryOrd'
+||$var['pag']=='obbMuscTrainingOrd'
 ||$var['pag']=='skedaTr'
 ||$var['pag']=='skedaDt'
 ||$var['pag']=='skedaAD'
@@ -55,6 +56,16 @@ if( // Array Video
 
 if (isset($_POST['ACT'])){
    switch ($_POST['ACT']){
+
+//modifica ordine Muscoli Obbligatori Training Type
+	  case $testo['buttons']['ordObbMuscle']:
+          require('../CODES/modOrdObbMuscle.php');
+	  break;
+
+//elimina Muscoli Obbligatori Training Type
+	  case $testo['buttons']['delObbMusc']:
+          require('../CODES/delObbMuscle.php');
+	  break;
 
 //Aggiungi Muscoli Obbligatori Training Type
 	  case $testo['buttons']['addMuscle']:

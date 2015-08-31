@@ -7,10 +7,10 @@ var datiCategory= new Array();
 echo '
 		var altDiv='.$kar['divHight'].';
 
-		datiCategory[\'num\']='.$liste[$_POST['id']]['num'].';
+		datiCategory[\'num\']='.$res['num'].';
   ';
- for ($i=0;$i<$liste[$_POST['id']]['num'];$i++){
-	echo 'datiCategory['.$i.']="'.$liste[$_POST['id']]['idc'][$i].'";
+ for ($i=0;$i<$res['num'];$i++){
+	echo 'datiCategory['.$i.']="'.$res['id'][$i].'";
     ';
 }	
 ?>

@@ -1,5 +1,4 @@
 <?php
-include_once '../CLASSANDFUNC/obbMuscOrdJS.php';
 
         $dataDB->forceList();
         $dataDB->setColWh(array('type'));
@@ -13,7 +12,7 @@ include_once '../CLASSANDFUNC/obbMuscOrdJS.php';
         $dataDB->setColOr(array('ord'));
         $after=$dataDB->select('obbTypeTraining');
 ?>
-<form action="index.php?token=<?php echo $_GET['token'];?>" method="post" name="modORD" id="modORD">
+<form action="index.php?token=<?php echo $_GET['token'];?>" accept-charset="utf-8" method="post" name="modORD" id="modORD">
 <table align="center" cellpadding="4" cellspacing="0" border="1px solid black">
 <tr>
 	<td align="center" valign="middle">Tipo</td>
@@ -71,10 +70,12 @@ include_once '../CLASSANDFUNC/obbMuscOrdJS.php';
                 echo '        
     </td>
 	<td align="center" valign="middle">
-            <input name="id" type="hidden" value="'.$after['id'][$j].'"/>
+<form action="index.php?token='.$_GET['token'].'" method="post" name="modORD" id="modORD">
+            <input name="id" type="hidden" value="'.$pre['id'][$j].'"/>
             <button name="ACT" type="submit" value="'.$testo['buttons']['delObbMusc'].'">
                '.$testo['buttons']['delObbMusc'].'
             </button>
+</form>
     </td>
 </tr>
    			    ';
@@ -84,12 +85,14 @@ include_once '../CLASSANDFUNC/obbMuscOrdJS.php';
     
     </td>
 	<td>
+    <?php $uar['pag']='obbMuscTrainingOrd';toUrl();?>
+<form action="index.php?token=<?php echo $var['token'];?>" method="post" name="modORD" id="modORD">
        <input name="type" type="hidden" value="pre"/>
-       <input name="id" type="hidden" value="'.$_POST['id'].'"/>
-       <input name="token" type="hidden" value="'.$_POST['token'].'"/>
+       <input name="token" type="hidden" value="<?php echo $_GET['token'];?>"/>
        <button name="ACT" type="submit" value="<?php echo $testo['buttons']['ordObbMuscle'];?>">
          <?php echo $testo['buttons']['ordObbMuscle'];?>
        </button>
+</form>
     </td>
 </tr>
 <tr>
@@ -111,10 +114,12 @@ include_once '../CLASSANDFUNC/obbMuscOrdJS.php';
                 echo '        
     </td>
 	<td align="center" valign="middle">
+<form action="index.php?token='.$_GET['token'].'" method="post" name="modORD" id="modORD">
             <input name="id" type="hidden" value="'.$after['id'][$j].'"/>
             <button name="ACT" type="submit" value="'.$testo['buttons']['delObbMusc'].'">
                '.$testo['buttons']['delObbMusc'].'
             </button>
+</form>
     </td>
 </tr>
    			    ';
@@ -124,12 +129,14 @@ include_once '../CLASSANDFUNC/obbMuscOrdJS.php';
         
     </td>
 	<td>
+    <?php $uar['pag']='obbMuscTrainingOrd';toUrl();?>
+<form action="index.php?token=<?php echo $var['token'];?>" method="post" name="modORD" id="modORD">
        <input name="type" type="hidden" value="after"/>
-       <input name="id" type="hidden" value="'.$_POST['id'].'"/>
-       <input name="token" type="hidden" value="'.$_POST['token'].'"/>
+       <input name="token" type="hidden" value="<?php echo $_GET['token'];?>"/>
        <button name="ACT" type="submit" value="<?php echo $testo['buttons']['ordObbMuscle'];?>">
          <?php echo $testo['buttons']['ordObbMuscle'];?>
        </button>
+</form>
     </td>
 </tr>
 </table>
