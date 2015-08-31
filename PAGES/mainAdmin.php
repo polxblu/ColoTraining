@@ -22,6 +22,14 @@
           require('../MODULES/skedaTraining.php');
 	  break;
 
+	  case 'skedaDt':// Skeda info Training
+          require('../MODULES/addingsTraining.php');
+	  break;
+
+	  case 'skedaAD':// Skeda Muscoli obbligatori
+          require('../MODULES/obbMuscTraining.php');
+	  break;
+
 	  case 'category':// Gestione Categorie
           require('../MODULES/adminCategories.php');
 	  break;

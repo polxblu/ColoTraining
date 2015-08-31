@@ -31,9 +31,9 @@ $definitions=array(
                       )
      ,'menu'  => array (  // Elenco menu
                       'admin'  => array (  // Elenco menu admin
-                             'num'  =>  7   //numero di oggetti
-                            ,'idc'  =>  array('home','skedaTr','video','category','webTxt','lingue','user')     //definizione di oggetti
-                            ,'priv' =>  array(false,false,false,false,false,true,true)      //definizione di oggetti
+                             'num'  =>  9   //numero di oggetti
+                            ,'idc'  =>  array('home','skedaTr','skedaDt','skedaAD','video','category','webTxt','lingue','user')     //definizione di oggetti
+                            ,'priv' =>  array(false,false,false,false,false,false,false,true,true)      //definizione di oggetti
                             )
                      ,'home'  => array (  // Elenco menu admin
                              'num'  =>  6   //numero di oggetti

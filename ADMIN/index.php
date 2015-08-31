@@ -43,6 +43,8 @@ if( // Array Liste
 ||$var['pag']=='video'
 ||$var['pag']=='modCategoryOrd'
 ||$var['pag']=='skedaTr'
+||$var['pag']=='skedaDt'
+||$var['pag']=='skedaAD'
 )listMAKER();
 
 if( // Array Video
