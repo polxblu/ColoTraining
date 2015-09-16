@@ -46,9 +46,9 @@ $definitions=array(
 // DEFINIZIONI UTILIZZO TABLE
 $DBtable=array(
      'user'   => array (  // Tabella User
-           'num'   =>  4    
-          ,'fields'=> array('name','surname','age','remTime')
-          ,'modFields'=> array(true,true,true,false)
+           'num'   =>  5    
+          ,'fields'=> array('name','surname','age','difLevel','remTime')
+          ,'modFields'=> array(true,true,true,true,false)
           )  
      ,'languages' => array (  // Tabella lingue
            'flag'     =>  true   

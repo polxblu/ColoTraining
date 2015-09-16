@@ -40,9 +40,11 @@ if($var['er']=='&nbsp;'){
         $mainDB->insert('user');
     
         for($i=0;$i<$DBtable['user']['num'];$i++){
-            $mainDB->setColDt(array('who','tableF','name','value'));
-            $mainDB->setValDt(array($var['newID'],'user',$DBtable['user']['fields'][$i],$_POST[$DBtable['user']['fields'][$i]]));
-            $mainDB->insert('extraFields');
+            if($DBtable['user']['modFields'][$i]){
+                $mainDB->setColDt(array('who','tableF','name','value'));
+                $mainDB->setValDt(array($var['newID'],'user',$DBtable['user']['fields'][$i],$_POST[$DBtable['user']['fields'][$i]]));
+                $mainDB->insert('extraFields');
+            }
         }
 
         $mainDB->setColDt(array('who','tableF','name','value'));

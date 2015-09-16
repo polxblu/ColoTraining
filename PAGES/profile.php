@@ -59,6 +59,25 @@
 
 <tr>
 	<td valign="middle" class="campi">
+    	<?php echo $testo['common']['userDifLevel']; ?>
+    </td>
+    <td valign="middle" class="campi">
+    	<select name="difLevel" id="difLevel" size="1" class="input">
+              <option></option>
+              <?php
+              for ($j=0;$j<$liste['videoDifficult']['num'];$j++){
+			     echo '<option value="'.$liste['videoDifficult']['idc'][$j].'"';
+                 if ($_SESSION['difLevel']==$liste['videoDifficult']['idc'][$j])echo' selected';
+                 echo '>'.$liste['videoDifficult']['name'][$j].'</option>
+              ';
+              }
+              ?>
+		   </select>
+    </td>
+</tr>
+
+<tr>
+	<td valign="middle" class="campi">
     	<?php echo $testo['common']['commUName']; ?>
     </td>
     <td valign="middle" class="campi">

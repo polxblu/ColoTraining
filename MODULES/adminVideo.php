@@ -1,6 +1,5 @@
 <?php
 echo '<div id="newWbTxt">';
-
 if ($grants[$_SESSION['status']]['video']){
 echo '
 <table align="center" width="100%" cellpadding="0">

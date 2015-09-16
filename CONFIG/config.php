@@ -18,6 +18,7 @@ $kar=array(
     ,'addTime'     => array(86400,2592000,31536000)      // Giorno(24 * 60 * 60)Settimana(7 * 24 * 60 * 60)Mese(30 * 24 * 60 * 60)Anno(365 * 24 * 60 * 60)
 	,'rangeAgeNum' => 3     // numero range eta
 	,'rangeAge'    => array('0-25','26-45','46-99')    // range eta
+	,'maxDifLevel' => 3     // Maximum difficult level
 	,'redTime' => 5     // Time for redirect in second
 	,'redTimeLink' => 20     // Time for redirect in second for messages
 	,'mailConfirm' => 'noreply@colombotraining.it'     // Time for redirect in second for messages
