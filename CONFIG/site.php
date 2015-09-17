@@ -9,11 +9,10 @@ $liste=array( //inizzializzazione array dele Liste e categorie
                       ,'idc'  =>  array('main','slave')      //definizione di oggetti
                       )
      ,'property'  => array (  // propieta liste Tabelle
-                       'num'    =>  4   //numero di oggetti
+                       'num'    =>  3   //numero di oggetti
                       ,'idc'  =>  array(
                             'videoCategory'      //Workout, panca,etc    
                            ,'videoMuscleGroup'   // gruppo muscolare
-                           ,'videoDifficult'     // Difficolta    
                            ,'typeTraining'       // Tipi di allenamento    
                            )         //definizione di oggetti
                       )

@@ -65,10 +65,10 @@
     	<select name="difLevel" id="difLevel" size="1" class="input">
               <option></option>
               <?php
-              for ($j=0;$j<$liste['videoDifficult']['num'];$j++){
-			     echo '<option value="'.$liste['videoDifficult']['idc'][$j].'"';
-                 if ($_SESSION['difLevel']==$liste['videoDifficult']['idc'][$j])echo' selected';
-                 echo '>'.$liste['videoDifficult']['name'][$j].'</option>
+   			  for ($j=0;$j<$kar['maxDifLevel'];$j++){
+	   			 echo '<option value="'.($j+1).'"';
+                 if ($_SESSION['difLevel']==($j+1))echo' selected'; 
+                 echo '>'.($j+1).'</option>
               ';
               }
               ?>

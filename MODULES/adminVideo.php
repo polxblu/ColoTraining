@@ -35,8 +35,8 @@ echo'
 		<select name="difficultN" id="difficultN" size="1">
             <option></option>
 ';
-   			for ($j=0;$j<$liste['videoDifficult']['num'];$j++){
-	   			echo '<option value="'.$liste['videoDifficult']['idc'][$j].'">'.$liste['videoDifficult']['name'][$j].'</option>
+   			for ($j=0;$j<$kar['maxDifLevel'];$j++){
+	   			echo '<option value="'.($j+1).'">'.($j+1).'</option>
                      ';
    			}
 echo'
@@ -145,14 +145,14 @@ echo'
               }
    			  echo '
 		   </select>
-		   '.$testo['video']['amdDifficul'].'&nbsp;
+		   '.$testo['video']['amdDifficul'].'&nbsp;'.$kar['maxDifLevel'].'
 		   <select name="difficult'.$i.'" id="difficult'.$i.'" size="1">
               <option></option>
               ';
-   			for ($j=0;$j<$liste['videoDifficult']['num'];$j++){
-	   			 echo '<option value="'.$liste['videoDifficult']['idc'][$j].'"';
-                 if ($video['difficult'][$i]==$liste['videoDifficult']['idc'][$j])echo' selected'; 
-                 echo '>'.$liste['videoDifficult']['name'][$j].'</option>
+   			for ($j=0;$j<$kar['maxDifLevel'];$j++){
+	   			 echo '<option value="'.($j+1).'"';
+                 if ($video['difficult'][$i]==($j+1))echo' selected'; 
+                 echo '>'.($j+1).'</option>
               ';
               }
    			  echo '

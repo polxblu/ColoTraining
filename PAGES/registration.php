@@ -43,7 +43,7 @@ $uar['pag']='registration';toUrl();
             <?php echo $testo['common']['passwdTR']; ?>&nbsp;
             <input name="passwd2" id="passwd2" type="password" required value="" /><br/>
             </span>
-            <input type="hidden"  value="<?php echo $liste['videoDifficult']['idc'][0];?>" />
+            <input type="hidden" name="difLevel" id="difLevel"  value="1" />
             <input name="remTime" id="remTime" type="hidden" value="<?php echo time();?>" /><br/>
             <button name="ACT" type="submit" value="<?php echo $testo['buttons']['register']; ?>">
                <?php echo $testo['buttons']['register']; ?>
